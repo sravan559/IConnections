@@ -1,0 +1,46 @@
+.iconn-logo {
+    height: 65px !important;
+    width: 130px !important;
+}
+
+.img-heading {
+    max-height: 200px;
+    padding-bottom: 10px;
+}
+
+.event-icon {
+    text-align: center;
+}
+
+.event-desc > h5 {
+    text-align: center;
+}
+
+.img-event-logo {
+    height: 100px;
+    max-width: 250px;
+}
+
+.event-desc > p {
+    text-align: justify;
+}
+
+h3, h4 {
+    font-weight: bold;
+}
+
+.table500 {
+    width: 40%;
+    text-align: left;
+    margin: 0% 30%;
+}
+
+.required::after {
+    content: "*";
+    color: red;
+    font-size: 14px;
+}
+
+input:focus, select:focus, textarea:focus {
+    background-color: #FFFAE6;
+}
