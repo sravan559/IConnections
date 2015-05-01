@@ -1,7 +1,7 @@
 <?php
 // Make a MySQL Connection
-$con = mysql_connect("localhost", "root", "") or die(mysql_error());
-mysql_select_db("icon_database") or die(mysql_error());
+$con = mysqli_connect("localhost", "root", "sravi123") or die(mysqli_error());
+mysqli_select_db($con,"iconnections") or die(mysqli_error());
 
 if($con){
 //echo "<h1> Connection successful</h1>";
@@ -72,9 +72,9 @@ pickuplocation,
 comments) values('$fname','$lname','$gender','$email','$needchildcare','$needtransportation','$dob','$country','$phone','$school','$numchild','$childcare_info',
 '$pickuplocation','$comments')";
 
-
-//echo "$sql";
-if(mysql_query($sql)){
+ 
+echo $sql;
+if(mysqli_query($con,$sql)){
 echo "<h3>Following user information saved!!</h3>";
 echo "<b>Name:</b> $fname $lname<br>";
 echo "<b>Gender:</b> $gender<br>";
@@ -92,15 +92,10 @@ echo "<b>PickUpLocation:</b> $pickuplocation<br>";
 }
 else{
 echo "<h2>Insertion failed</h2>";
-
 }
-
-
-
 }
 else{
 echo "<h2>One or more mandatory fields needs to be filled. Please fill all the mandatory fields(marked with *)</h2>";
-
 }
 
 }
