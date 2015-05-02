@@ -15,7 +15,16 @@
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="shortcut icon" href="images/ico/iconn.ico">
+    <script src="js/jquery.js"></script>
+    <script src="galleria/galleria-1.4.2.min.js"></script>
+    <style>
+     
+    </style>
+    <script>
+        Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+        Galleria.run('.galleria');
+    </script>
 </head><!--/head-->
 <body>
     <header id="header">
@@ -61,57 +70,14 @@
             </div><!--/.container-->
         </nav><!--/nav-->
     </header><!--/header-->
-    <div class="row">
-        <div class="portfolio-items">
-            <div class="portfolio-item apps col-xs-12 col-sm-4 col-md-3">
-                <div class="recent-work-wrap">
-                    <a class="preview" href="images/portfolio/full/item1.png" rel="prettyPhoto"> <img class="img-responsive" src="images/portfolio/recent/item1.png" alt=""></a>
-                </div>
-            </div><!--/.portfolio-item-->
 
-            <div class="portfolio-item joomla bootstrap col-xs-12 col-sm-4 col-md-3">
-                <div class="recent-work-wrap">
-                    <a class="preview" href="images/portfolio/full/item2.png" rel="prettyPhoto"> <img class="img-responsive" src="images/portfolio/recent/item2.png" alt=""></a>
-                </div>
-            </div><!--/.portfolio-item-->
-
-            <div class="portfolio-item bootstrap wordpress col-xs-12 col-sm-4 col-md-3">
-                <div class="recent-work-wrap">
-                    <a class="preview" href="images/portfolio/full/item3.png" rel="prettyPhoto"><img class="img-responsive" src="images/portfolio/recent/item3.png" alt=""></a>
-                </div>
-            </div><!--/.portfolio-item-->
-
-            <div class="portfolio-item joomla wordpress apps col-xs-12 col-sm-4 col-md-3">
-                <div class="recent-work-wrap">
-                    <a class="preview" href="images/portfolio/full/item4.png" rel="prettyPhoto"><img class="img-responsive" src="images/portfolio/recent/item4.png" alt=""></a>
-                </div>
-            </div><!--/.portfolio-item-->
-
-            <div class="portfolio-item joomla html bootstrap col-xs-12 col-sm-4 col-md-3">
-                <div class="recent-work-wrap">
-                    <a class="preview" href="images/portfolio/full/item5.png" rel="prettyPhoto"><img class="img-responsive" src="images/portfolio/recent/item5.png" alt=""></a>
-                </div>
-            </div><!--/.portfolio-item-->
-
-            <div class="portfolio-item wordpress html apps col-xs-12 col-sm-4 col-md-3">
-                <div class="recent-work-wrap">
-                    <a class="preview" href="images/portfolio/full/item6.png" rel="prettyPhoto"><img class="img-responsive" src="images/portfolio/recent/item6.png" alt=""></a>
-                </div>
-            </div><!--/.portfolio-item-->
-
-            <div class="portfolio-item wordpress html col-xs-12 col-sm-4 col-md-3">
-                <div class="recent-work-wrap">
-                    <a class="preview" href="images/portfolio/full/item7.png" rel="prettyPhoto"><img class="img-responsive" src="images/portfolio/recent/item7.png" alt=""></a>
-                </div>
-            </div><!--/.portfolio-item-->
-
-            <div class="portfolio-item wordpress html bootstrap col-xs-12 col-sm-4 col-md-3">
-                <div class="recent-work-wrap">
-                    <a class="preview" href="images/portfolio/full/item8.png" rel="prettyPhoto"><img class="img-responsive" src="images/portfolio/recent/item8.png" alt=""></a>
-                </div>
-            </div><!--/.portfolio-item-->
-        </div>
+    <div class="galleria">
+        <img src="images/gallery/item1.png">
+        <img src="images/gallery/item2.png">
+        <img src="images/gallery/item3.png">
     </div>
+
+
     <footer id="footer" class="midnight-blue">
         <div class="container">
             <div class="row">
@@ -120,16 +86,16 @@
                 </div>
                 <div class="col-sm-6">
                     <ul class="pull-right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Faq</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer><!--/#footer-->
-    <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/jquery.isotope.min.js"></script>

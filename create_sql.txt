@@ -3,13 +3,13 @@ userid int NOT NULL AUTO_INCREMENT,
 fname varchar(20) NOT NULL,
 lname varchar(20) NOT NULL,
 gender char(1),
-email varchar(20),
+email varchar(50),
 needchildcare varchar(5),
 needtransportation varchar(5),
 dob date,
 country varchar(15),
-phone int,
-school varchar(5),
+phone nvarchar(20),
+school varchar(20),
 numchild int,
 childcareinfo varchar(100),
 pickuplocation varchar(30),
@@ -17,3 +17,12 @@ comments varchar(100),
 PRIMARY KEY ( userID )
 );
 
+
+Create Table Contactus(
+id int NOT NULL AUTO_INCREMENT,
+subject varchar(30) NOT NULL,
+name varchar(30) NOT NULL,
+email varchar(50),
+phone nvarchar(20),
+message varchar(300)
+)
