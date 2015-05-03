@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -66,7 +66,9 @@
             <h2>Registration Form</h2>
         </div>
         <div class="container" style="margin:0% 20%;width:80%;">
-            <form action="register.php" method="post" class="form-horizontal">
+    
+
+	<form method="post" class="form-horizontal">
                 <div class="form-group">
                     <label for="inputfirstname" class="col-md-3  required">
                         First Name

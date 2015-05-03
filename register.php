@@ -1,7 +1,7 @@
 <?php
 // Make a MySQL Connection
-$con = mysqli_connect("localhost", "root", "sravi123") or die(mysqli_error());
-mysqli_select_db($con,"iconnections") or die(mysqli_error());
+$con = mysqli_connect("localhost", "root", "") or die(mysqli_error());
+mysqli_select_db($con,"icon_database") or die(mysqli_error());
 
 if($con){
 //echo "<h1> Connection successful</h1>";
@@ -72,8 +72,13 @@ pickuplocation,
 comments) values('$fname','$lname','$gender','$email','$needchildcare','$needtransportation','$dob','$country','$phone','$school','$numchild','$childcare_info',
 '$pickuplocation','$comments')";
 
- 
-echo $sql;
+ mysqli_query($con,$sql);
+echo "<h1 style='text-align: center; color: red;'>User $fname $lname successfully registered!!</h1>";
+//echo "<h1 style='position:absolute; text-align: center'>User $fname $lname successfully registered</h1>";
+
+//echo "<h2>User $fname $lname successfully registered</h2>";
+
+ /*
 if(mysqli_query($con,$sql)){
 echo "<h3>Following user information saved!!</h3>";
 echo "<b>Name:</b> $fname $lname<br>";
@@ -89,15 +94,21 @@ echo "<b>NumberOfChildren:</b> $numchild<br>";
 echo "<b>ChildCareInfo:</b> $childcare_info<br>";
 echo "<b>PickUpLocation:</b> $pickuplocation<br>";
 
+
 }
 else{
 echo "<h2>Insertion failed</h2>";
 }
-}
-else{
-echo "<h2>One or more mandatory fields needs to be filled. Please fill all the mandatory fields(marked with *)</h2>";
-}
+*/
 
 }
+/*
+else{
+echo "<h2>One or more mandatory fields needs to be filled. Please fill all the mandatory fields(marked with *)</h2>";
+}*/
+
+}
+
+mysqli_close($con);
 
 ?>
