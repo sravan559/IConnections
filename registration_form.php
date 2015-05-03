@@ -38,7 +38,7 @@
                 </div>
             </div><!--/.container-->
         </div><!--/.top-bar-->
-        <nav class="navbar navbar-inverse" role="banner">
+        <nav class="navbar navbar-inverse">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -82,11 +82,11 @@
                         Last Name
                     </label>
                     <div class="col-md-5">
-                        <input type="text" name="lname" class="form-control" id="inputlastname" placeholder="Enter Last Name..." required maxlength="20" />
+                        <input type="text"  name="lname" class="form-control" id="inputlastname" placeholder="Enter Last Name..." required maxlength="20" />
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="inputdateofbirth" class="col-md-3 required"> Date of Birth</label>
+                    <label class="col-md-3 required"> Date of Birth</label>
                     <div class="col-md-5">
                         <div class="row">
                             <div class="col-md-5">
@@ -202,10 +202,10 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="inputgender" class="col-md-3 required">Gender</label>
+                    <label for="gender" class="col-md-3 required">Gender</label>
                     <div class="col-md-5 ">
                         <label>
-                            <input type="radio" name="gender" value="M" required>
+                            <input type="radio" id="gender" name="gender" value="M" required>
                             Male
                         </label>
                         <label>
@@ -215,11 +215,11 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="inputUsername" class="col-md-3 required">
+                    <label for="country" class="col-md-3 required">
                         Country
                     </label>
                     <div class="col-md-5">
-                        <select name="country" class="form-control">
+                        <select name="country" id="country" class="form-control">
                             <option value="">Select a Country</option>
                             <option value="Afghanistan">Afghanistan</option>
                             <option value="Albania">Albania</option>
@@ -460,27 +460,27 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="inputemail" class="col-md-3 required">
+                    <label for="email" class="col-md-3 required">
                         E-mail
                     </label>
                     <div class="col-md-5">
-                        <input type="email" name="email" class="form-control" id="inputemail" placeholder="Enter E-mail address" required />
+                        <input type="email" id="email" name="email" class="form-control" id="inputemail" placeholder="Enter E-mail address" required />
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="inputphone" class="col-md-3">
+                    <label for="phone" class="col-md-3">
                         Phone
                     </label>
                     <div class="col-md-5">
-                        <input type="tel" name="phone" class="form-control" id="inputphone" placeholder="Enter Phone number" maxlength="10" />
+                        <input type="tel" name="phone" id="phone" class="form-control" id="inputphone" placeholder="Enter Phone number" maxlength="10" />
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="inputUsername" class="col-md-3">
+                    <label for="school" class="col-md-3">
                         School
                     </label>
                     <div class="col-md-5">
-                        <select name="school" class="form-control">
+                        <select name="school" id="school" class="form-control">
                             <option>Select a School</option>
                             <option value="IEP">IEP</option>
                             <option value="IU">IU</option>
@@ -492,10 +492,10 @@
 
                 </div>
                 <div class="form-group">
-                    <label for="inputgender" class="col-md-3 required">Need ChildCare</label>
+                    <label for="needchildcare" class="col-md-3 required">Need ChildCare</label>
                     <div class="col-md-5 ">
                         <label>
-                            <input type="radio" name="needchildcare" value="Yes" required>
+                            <input type="radio" id="needchildcare" name="needchildcare" value="Yes" required>
                             Yes
                         </label>
                         <label>
@@ -505,11 +505,11 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="inputUsername" class="col-md-3">
+                    <label for="numchild" class="col-md-3">
                         No. of Children Needing ChildCare
                     </label>
                     <div class="col-md-5">
-                        <select name="numchild" class="form-control">
+                        <select name="numchild" id="numchild" class="form-control">
                             <option>Select a number</option>
                             <option value="0">0</option>
                             <option value="1">1</option>
@@ -519,18 +519,18 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="inputphone" class="col-md-3">
+                    <label for="childcare_info" class="col-md-3">
                         Children Information (List Name,Age,Sex of Children)
                     </label>
                     <div class="col-md-5">
-                        <textarea rows="4" name="childcare_info" cols="45" class="form-control" maxlength="100"></textarea>
+                        <textarea rows="4" name="childcare_info" id="childcare_info" cols="45" class="form-control" maxlength="100"></textarea>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="inputgender" class="col-md-3 required">Need Transportation</label>
+                    <label for="needtransportation" class="col-md-3 required">Need Transportation</label>
                     <div class="col-md-5 ">
                         <label>
-                            <input type="radio" name="needtransportation" value="Yes" required>
+                            <input type="radio" id="needtransportation" name="needtransportation" value="Yes" required>
                             Yes
                         </label>
                         <label>
@@ -540,11 +540,11 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="inputUsername" class="col-md-3">
+                    <label for="pickuplocation" class="col-md-3">
                         Pickup Location
                     </label>
                     <div class="col-md-5">
-                        <select name="pickuplocation" class="form-control">
+                        <select name="pickuplocation" id="pickuplocation" class="form-control">
                             <option value="">Select a Location</option>
                             <option value="Evermann/Red Bud">Evermann/Red Bud</option>
                             <option value="Campus View">Campus View</option>
@@ -555,11 +555,11 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="inputphone" class="col-md-3">
+                    <label for="comments" class="col-md-3">
                         Comments or Queries?
                     </label>
                     <div class="col-md-5">
-                        <textarea rows="4" name="comments" class="form-control"></textarea>
+                        <textarea rows="4" id="comments" name="comments" class="form-control"></textarea>
                     </div>
                 </div>
                 <div class="form-group">
@@ -583,7 +583,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    &copy; 2013 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
+                    &copy; 2015 International Connections. All Rights Reserved.
                 </div>
                 <div class="col-sm-6">
                     <ul class="pull-right">

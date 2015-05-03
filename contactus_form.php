@@ -37,7 +37,7 @@
                 </div>
             </div><!--/.container-->
         </div><!--/.top-bar-->
-        <nav class="navbar navbar-inverse" role="banner">
+        <nav class="navbar navbar-inverse">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -87,7 +87,7 @@
                                         Bloomington, IN 47401
                                     </p>
                                     <p>
-                                        <label for="Phone">Phone: </label> +1 (812)-334-0206<br>
+                                        <label>Phone: </label> +1 (812)-334-0206<br>
                                     </p>
                                 </address>
 
@@ -97,22 +97,22 @@
                                 <h5>Elan Rajamani</h5>
                                 <address>
                                     <p>
-                                        <label for="Phone">Phone: </label> +1 (812)-325-9047<br>
-                                        <label for="Email Address">Email Address: </label><a href="mailto:elan@ifmusa.org"> elan@ifmusa.org</a>
+                                        <label>Phone: </label> +1 (812)-325-9047<br>
+                                        <label>Email Address: </label><a href="mailto:elan@ifmusa.org"> elan@ifmusa.org</a>
                                     </p>
                                 </address>
                                 <h5>Ed Huff</h5>
                                 <address>
                                     <p>
-                                        <label for="Phone">Phone: </label> +1 (812)-327-5549<br>
-                                        <label for="Email Address">Email Address: </label><a href="mailto:huffed@indiana.edu"> huffed@indiana.edu</a>
+                                        <label>Phone: </label> +1 (812)-327-5549<br>
+                                        <label>Email Address: </label><a href="mailto:huffed@indiana.edu"> huffed@indiana.edu</a>
                                     </p>
                                 </address>
                                 <h5> Rani Rajamani (Women Co-ordinator)</h5>
                                 <address>
                                     <p>
-                                        <label for="Phone">Phone: </label> +1 (812)-325-9047<br>
-                                        <label for="Email Address">Email Address: </label><a href="mailto:rani@rajamani.org"> rani@rajamani.org</a>
+                                        <label>Phone: </label> +1 (812)-325-9047<br>
+                                        <label>Email Address: </label><a href="mailto:rani@rajamani.org"> rani@rajamani.org</a>
                                     </p>
                                 </address>
                             </li>
@@ -132,26 +132,26 @@
                 <form method="post" action="contactus.php">
                     <div class="col-sm-5 col-sm-offset-1">
                         <div class="form-group">
-                            <label class="required">Subject</label>
-                            <input type="text" name="subject" class="form-control" required maxlength="30">
+                            <label class="required" for="subject">Subject</label>
+                            <input type="text" name="subject" id="subject" class="form-control" required maxlength="30">
                         </div>
                         <div class="form-group">
-                            <label class="required">Name</label>
-                            <input type="text" name="name" class="form-control" required maxlength="30">
+                            <label class="required" for="name">Name</label>
+                            <input type="text" name="name" id="name" class="form-control" required maxlength="30">
                         </div>
                         <div class="form-group">
-                            <label class="required">Email</label>
-                            <input type="email" name="email" class="form-control" required maxlength="50">
+                            <label class="required" for="email">Email</label>
+                            <input type="email" name="email" id="email" class="form-control" required maxlength="50">
                         </div>
                         <div class="form-group">
-                            <label class="required">Phone</label>
-                            <input type="tel" name="phone" class="form-control" maxlength="20">
+                            <label class="required" for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" maxlength="20">
                         </div>
 
                     </div>
                     <div class="col-sm-5">
                         <div class="form-group">
-                            <label class="required">Message</label>
+                            <label class="required" for="message">Message</label>
                             <textarea name="message" id="message" required maxlength="300" class="form-control" rows="9"></textarea>
                         </div>
                         <div class="form-group">
@@ -166,7 +166,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    &copy; 2013 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
+                  &copy; 2015 International Connections. All Rights Reserved.
                 </div>
                 <div class="col-sm-6">
                     <ul class="pull-right">

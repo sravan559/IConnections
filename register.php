@@ -1,7 +1,7 @@
 <?php
 // Make a MySQL Connection
-$con = mysqli_connect("localhost", "root", "") or die(mysqli_error());
-mysqli_select_db($con,"icon_database") or die(mysqli_error());
+$con = mysqli_connect("localhost", "root", "sravi123") or die(mysqli_error());
+mysqli_select_db($con,"iconnections") or die(mysqli_error());
 
 if($con){
 //echo "<h1> Connection successful</h1>";
