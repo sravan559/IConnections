@@ -7,7 +7,7 @@ email varchar(50),
 needchildcare varchar(5),
 needtransportation varchar(5),
 dob date,
-country varchar(15),
+country varchar(50),
 phone nvarchar(20),
 school varchar(20),
 numchild int,
@@ -24,5 +24,6 @@ subject varchar(30) NOT NULL,
 name varchar(30) NOT NULL,
 email varchar(50),
 phone nvarchar(20),
-message varchar(300)
+message varchar(300),
+PRIMARY KEY (id)
 )
